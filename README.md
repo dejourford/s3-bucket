@@ -1,37 +1,31 @@
-# IAM Lab – Least Privilege User
+# S3 Lab – Creating S3 Bucket
 
 ## 🔍 Objective
-Demonstrate how to create a secure IAM user with limited permissions and enable MFA.
+Demonstrate how to create an S3 bucket and upload files..
 
 ## 🛠️ Tools & Services Used
-- AWS IAM
 - AWS Console
+- AWS S3
 
 ## 📝 What I Did
-1. Created a new IAM user named `readonly-analyst`
-2. Attached a custom policy granting `ec2:Describe*` and `s3:List*` only
-3. Enabled MFA
-4. Tested login with IAM user to verify limited access
+1. Created a s3 bucket named `dejour-test-bucket`
+2. Unchecked `Block all public access` to explore permissions
+3. Uploaded a file
+4. Explore Tabs and access files
 
 ## 📁 Files Included
 | File | Description |
 |------|-------------|
-| `iam-readonly-policy.json` | Custom IAM policy file used in this lab |
+| `dejour-test-bucket.py` | Custom Python file used in this lab |
 
 ## 💡 What I Learned
-- How to define and apply least-privilege IAM policies
-- How MFA protects root accounts and users
-- IAM policies are written in JSON and can be customized by service/action
-- IAM user password can only be reset by the root user or users with admin privledges
+- How to create S3 Buckets
+- Set Permissions for Bucket Access
+- Bucket Files can only be accessed by users with permissions
 
 ## 🔒 Security Concepts Covered
-- IAM
-- Least Privilege
-- Multi-Factor Authentication (MFA)
+- S3 Bucket Permissions
+- Public Access Settings
+- IAM Policy Scope
 
 ## 📷 Screenshots
-![Dashboard Users Image](./users.png)
-![Dashboard Users Image](./console-access.png)
-![Dashboard Users Image](./password.png)
-![Dashboard Users Image](./password-reset.png)
-![Dashboard Users Image](./limited-access.png)
