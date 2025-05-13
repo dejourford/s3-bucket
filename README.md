@@ -17,6 +17,8 @@ Demonstrate how to create an S3 bucket and upload files..
 | File | Description |
 |------|-------------|
 | `dejour-test-bucket.py` | Custom Python file used in this lab |
+| `dejour-test-bucket.json` | Custom Bucket JSON file used in this lab |
+
 
 ## 💡 What I Learned
 - How to create S3 Buckets
